@@ -26,7 +26,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 	if (!dbNoobsUrl) return console.error("No mapping found for", id);
 	if (!isValidUrl) {
-		alert(`Canno't redirect, reason: \n\n${dbNoobsUrl}`);
+		alert(`Cannot redirect, reason: \n\n${dbNoobsUrl}`);
 		return;
 	}
 
