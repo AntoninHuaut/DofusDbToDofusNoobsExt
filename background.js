@@ -11,7 +11,6 @@ fetch("https://raw.githubusercontent.com/AntoninHuaut/DofusNoobsIdentifier/refs/
 chrome.browserAction.onClicked.addListener(() => {
 	chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
 		if (tabs.length === 0) return;
-		console.log(tabs[0])
 		chrome.tabs.sendMessage(tabs[0].id, { action: "redirectDofusNoobs", mapping });
 	});
 });
