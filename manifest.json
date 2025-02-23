@@ -2,7 +2,8 @@
 	"manifest_version": 2,
 	"name": "DofusDbToDofusNoobsExt",
 	"description": "DofusDbToDofusNoobsExt: redirection vers DofusNoobs depuis DofusDb",
-	"version": "1.0.0",
+	"version": "1.1.0",
+	"permissions": ["storage", "tabs"],
 	"browser_action": {
 		"default_icon": "images/icon.png"
 	},
@@ -23,5 +24,9 @@
 		"gecko": {
 			"update_url": "https://raw.githubusercontent.com/AntoninHuaut/DofusDbToDofusNoobsExt/refs/heads/master/update_firefox.json"
 		}
+	},
+	"options_page": "options/options.html",
+	"options_ui": {
+		"page": "options/options.html"
 	}
 }

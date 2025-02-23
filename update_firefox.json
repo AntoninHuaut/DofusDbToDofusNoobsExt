@@ -5,6 +5,10 @@
 				{
 					"version": "1.0.0",
 					"update_link": "https://addons.mozilla.org/firefox/downloads/file/4442450/0808bdced5a740b1ab0c-1.0.0.xpi"
+				},
+				{
+					"version": "1.1.0",
+					"update_link": "https://addons.mozilla.org/firefox/downloads/file/4442635/0808bdced5a740b1ab0c-1.1.0.xpi"
 				}
 			]
 		}
