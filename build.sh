@@ -2,7 +2,7 @@
 set -euo pipefail
 
 zip_ext() {
-    zip -r extension.zip . -x ".*" -x "__MACOSX" -x "build.sh" -x "manifest-chrome.json" -x "manifest-firefox.json" -x "README.md"
+    zip -r extension.zip . -x "build.sh" -x "manifest-chrome.json" -x "manifest-firefox.json" -x "README.md"
 }
 
 build() {
