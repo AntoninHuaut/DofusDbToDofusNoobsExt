@@ -1,17 +1,19 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "DofusDbToDofusNoobsExt",
 	"description": "DofusDbToDofusNoobsExt: redirection vers DofusNoobs depuis DofusDb",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"permissions": ["storage", "tabs"],
-	"browser_action": {
+	"host_permissions": ["*://dofusdb.fr/*"],
+	"action": {
 		"default_icon": "images/icon.png"
 	},
 	"icons": {
 		"128": "images/icon.png"
 	},
 	"background": {
-		"scripts": ["background.js"]
+		"service_worker": "background.js",
+		"type": "module"
 	},
 	"content_scripts": [
 		{
@@ -20,11 +22,6 @@
 			"js": ["content.js"]
 		}
 	],
-	"browser_specific_settings": {
-		"gecko": {
-			"update_url": "https://raw.githubusercontent.com/AntoninHuaut/DofusDbToDofusNoobsExt/refs/heads/master/update_firefox.json"
-		}
-	},
 	"options_page": "options/options.html",
 	"options_ui": {
 		"page": "options/options.html"

@@ -48,7 +48,8 @@ fetch("https://raw.githubusercontent.com/AntoninHuaut/DofusNoobsIdentifier/refs/
 	})
 	.catch(error => console.error("Error loading JSON:", error));
 
-chrome.browserAction.onClicked.addListener(() => {
+// MV2 vs MV3
+(chrome.browserAction ?? chrome.action).onClicked.addListener(() => {
 	chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
 		if (tabs.length === 0) return;
 
